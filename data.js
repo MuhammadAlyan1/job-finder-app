@@ -1,21 +1,10 @@
-import scootLogo from '/public/scoot.svg';
-import blogrLogo from '/public/blogr.svg';
-import coffeeroastersLogo from '/public/coffeeroasters.svg';
-import creativeLogo from '/public/creative.svg';
-import crowdfundLogo from '/public/crowdfund.svg';
-import makerLogo from '/public/maker.svg';
-import podLogo from '/public/pod.svg';
-import typemasterLogo from '/public/typemaster.svg';
-import vectorLogo from '/public/vector.svg';
-import pomodoroLogo from '/public/pomodoro.svg';
-import mastercraftLogo from '/public/mastercraft.svg';
-import officeliteLogo from '/public/officelite.svg';
-
 export const jobs = [
   {
     id: 1,
     company: 'Scoot',
-    logo: scootLogo,
+    logo: '/scoot.svg',
+    logoHeight: 12,
+    logoWidth: 40,
     logoBackground: 'bg-amber-500',
     position: 'Senior Software Engineer',
     postedAt: '5h ago',
@@ -49,7 +38,9 @@ export const jobs = [
   {
     id: 2,
     company: 'Blogr',
-    logo: blogrLogo,
+    logo: '/blogr.svg',
+    logoHeight: 17,
+    logoWidth: 21,
     logoBackground: 'bg-orange-700',
     position: 'Haskell and PureScript Dev',
     postedAt: '20h ago',
@@ -83,7 +74,9 @@ export const jobs = [
   {
     id: 3,
     company: 'Vector',
-    logo: vectorLogo,
+    logo: '/vector.svg',
+    logoHeight: 3,
+    logoWidth: 38,
     logoBackground: 'bg-slate-800',
     position: 'Midlevel Back End Engineer',
     postedAt: '1d ago',
@@ -116,7 +109,9 @@ export const jobs = [
   {
     id: 4,
     company: 'Office Lite',
-    logo: officeliteLogo,
+    logo: '/officelite.svg',
+    logoHeight: 20,
+    logoWidth: 30,
     logoBackground: 'bg-blue-600',
     position: 'Senior Application Engineer',
     postedAt: '2d ago',
@@ -151,7 +146,9 @@ export const jobs = [
   {
     id: 5,
     company: 'Pod',
-    logo: podLogo,
+    logo: '/pod.svg',
+    logoHeight: 24,
+    logoWidth: 24,
     logoBackground: 'bg-gray-800',
     position: 'Remote DevOps Engineer',
     postedAt: '2d ago',
@@ -190,7 +187,9 @@ export const jobs = [
   {
     id: 6,
     company: 'Creative',
-    logo: creativeLogo,
+    logo: '/creative.svg',
+    logoHeight: 26,
+    logoWidth: 26,
     logoBackground: 'bg-purple-900',
     position: 'Desktop Support Manager',
     postedAt: '4d ago',
@@ -227,7 +226,9 @@ export const jobs = [
   {
     id: 7,
     company: 'Pomodoro',
-    logo: pomodoroLogo,
+    logo: '/pomodoro.svg',
+    logoHeight: 7,
+    logoWidth: 43,
     logoBackground: 'bg-indigo',
     position: 'iOS Engineer',
     postedAt: '1w ago',
@@ -261,7 +262,9 @@ export const jobs = [
   {
     id: 8,
     company: 'Maker',
-    logo: makerLogo,
+    logo: '/maker.svg',
+    logoHeight: 22,
+    logoWidth: 22,
     logoBackground: 'bg-blue-900',
     position: 'Senior EJB Developer',
     postedAt: '1w ago',
@@ -295,7 +298,9 @@ export const jobs = [
   {
     id: 9,
     company: 'Coffeeroasters',
-    logo: coffeeroastersLogo,
+    logo: '/coffeeroasters.svg',
+    logoHeight: 24,
+    logoWidth: 24,
     logoBackground: 'bg-orange-100',
     position: 'Senior Frontend Developer',
     postedAt: '1w ago',
@@ -329,7 +334,9 @@ export const jobs = [
   {
     id: 10,
     company: 'Mastercraft',
-    logo: mastercraftLogo,
+    logo: '/mastercraft.svg',
+    logoHeight: 26,
+    logoWidth: 26,
     logoBackground: 'bg-stone-900',
     position: 'App & Website Designer',
     postedAt: '2w ago',
@@ -365,7 +372,9 @@ export const jobs = [
   {
     id: 11,
     company: 'Crowdfund',
-    logo: crowdfundLogo,
+    logo: '/crowdfund.svg',
+    logoHeight: 6,
+    logoWidth: 38,
     logoBackground: 'bg-emerald-900',
     position: 'Fullstack Developer',
     postedAt: '1mo ago',
@@ -401,7 +410,9 @@ export const jobs = [
   {
     id: 12,
     company: 'Typemaster',
-    logo: typemasterLogo,
+    logo: '/typemaster.svg',
+    logoHeight: 24,
+    logoWidth: 24,
     logoBackground: 'bg-orange-600',
     position: 'Technical Lead Engineer',
     postedAt: '1mo ago',
@@ -436,7 +447,9 @@ export const jobs = [
   {
     id: 13,
     company: 'Crowdfund',
-    logo: crowdfundLogo,
+    logo: '/crowdfund.svg',
+    logoHeight: 6,
+    logoWidth: 38,
     logoBackground: 'bg-green-500',
     position: 'Front-end Developer',
     postedAt: '1mo ago',
@@ -471,7 +484,9 @@ export const jobs = [
   {
     id: 14,
     company: 'Coffeeroasters',
-    logo: coffeeroastersLogo,
+    logo: '/coffeeroasters.svg',
+    logoHeight: 24,
+    logoWidth: 24,
     logoBackground: 'bg-orange-100',
     position: 'Junior Full-Stack Developer',
     postedAt: '1mo ago',
@@ -506,7 +521,9 @@ export const jobs = [
   {
     id: 15,
     company: 'Blogr',
-    logo: blogrLogo,
+    logo: '/blogr.svg',
+    logoHeight: 17,
+    logoWidth: 21,
     logoBackground: 'bg-red-700',
     position: 'Midweight Front-end Developer',
     postedAt: '1mo ago',
