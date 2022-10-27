@@ -1,0 +1,104 @@
+import Job from '../Job';
+import { renderWithProviders } from '../../testUtils';
+import '@testing-library/jest-dom';
+import { screen, fireEvent, waitFor } from '@testing-library/react';
+import scottImage from '../../../public/scoot.svg';
+
+const job = {
+  id: 1,
+  company: 'Scoot',
+  logo: scottImage,
+  logoHeight: 12,
+  logoWidth: 40,
+  logoBackground: 'bg-amber-500',
+  position: 'Senior Software Engineer',
+  postedAt: '5h ago',
+  contract: 'Full Time',
+  location: 'United Kingdom',
+  website: 'https://example.com/scoot',
+  apply: 'https://example.com/scoot/apply',
+  description:
+    'Scoot is looking for a Senior Software Engineer passionate about building approachable, innovative and user-first experiences to join our small but growing Engineering team. You will be responsible for building and maintaining front end functionality across all of Scoot’s applications, fostering a growing team of software engineers, and helping drive and maintain best software patterns and practices in our codebase.',
+  requirements: {
+    content:
+      'The ideal candidate is as passionate about solving challenges through technology. They are well-versed in building proof of concepts from scratch and taking these POCs to production and scale. The right fit will have the engineering experience to build and iterate quickly and is comfortable working with product and design to set the technical strategy and roadmap.',
+    items: [
+      '5+ years of industry experience in a software engineering role, preferably building a SaaS product. You can demonstrate significant impact that your work has had on the product and/or the team.',
+      'Experience with scalable distributed systems, both built from scratch as well as on AWS primitives.',
+      'Extremely data-driven.',
+      'Ability to debug complex systems.',
+    ],
+  },
+  role: {
+    content:
+      'We are looking for a Senior Software Engineer to join as one of our first hires. As we iterate on our MVP, you will have the opportunity to drive the vision and own the build behind our digital experience. You’ll have the support of an experienced technical advisor, a Head of Product, and an external team to work with.',
+    items: [
+      'This role is for someone who is excited about the early stage - you’ll be responsible for turning the platform vision into reality through smart, efficient building and testing.',
+      'Translate the product roadmap into engineering requirements and own the engineering roadmap',
+      'Work with limited resources to test and learn as efficiently as possible, while laying the framework to build a more scalable product over time.',
+      'Collaborate with product, design, and external engineering teammates as needed.',
+    ],
+  },
+};
+
+const handleRedirect = jest.fn;
+
+describe('Test Job component', () => {
+  test('It should render job component', () => {
+    renderWithProviders(<Job job={job} index={0} />);
+  });
+
+  test('Should render image', () => {
+    renderWithProviders(<Job job={job} index={0} />);
+
+    const imageElement = screen.getByTestId(/image-component/i);
+    expect(imageElement).toBeVisible();
+  });
+
+  test('Should render posted at date', () => {
+    renderWithProviders(<Job job={job} index={0} />);
+
+    const postedAtDate = screen.getByText(job.postedAt);
+    expect(postedAtDate).toBeInTheDocument();
+  });
+
+  test('Should render posted at date', () => {
+    renderWithProviders(<Job job={job} index={0} />);
+
+    const contract = screen.getByText(job.contract);
+    expect(contract).toBeInTheDocument();
+  });
+
+  test('Should render position', () => {
+    renderWithProviders(<Job job={job} index={0} />);
+
+    const position = screen.getByText(job.position);
+    expect(position).toBeInTheDocument();
+  });
+
+  test('Should render position', () => {
+    renderWithProviders(<Job job={job} index={0} />);
+
+    const company = screen.getByText(job.company);
+    expect(company).toBeInTheDocument();
+  });
+
+  test('Should render position', () => {
+    renderWithProviders(<Job job={job} index={0} />);
+
+    const location = screen.getByText(job.location);
+    expect(location).toBeInTheDocument();
+  });
+
+  // test('Should redirect to job details component', async () => {
+  //   renderWithProviders(<Job job={job} index={0} />);
+
+  //   const jobContainer = screen.getByTestId(/job-container/i);
+  //   fireEvent.click(jobContainer);
+
+  //   const company = await screen.findByText(`${job.company}.com`);
+  //   expect(company).toBeInTheDocument();
+
+  //   // expect(location).toBeInTheDocument();
+  // });
+});
